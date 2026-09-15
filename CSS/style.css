@@ -1,0 +1,24 @@
+div input[type="text"] {
+  background-color: beige;
+}
+
+span {
+  color: red;
+}
+
+button {
+  font-size: large;
+}
+
+ol,
+ul {
+  font-size: larger;
+}
+
+body {
+  background: rgb(211, 211, 211);
+}
+
+img {
+  size-adjust: 0.1px;
+}

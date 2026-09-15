@@ -1,0 +1,39 @@
+/* All of the choices for my header were made to help it stand out. The font family was chose as times new roman because it best fit the actual title of the show im basing this website off of */
+h1 {
+  text-align: center;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  letter-spacing: 15px;
+  font-size: 80px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(70, 68, 75);
+}
+
+/* Both my header 2 and 3 had these choices made to make them stand out apart from the paragraphs and the header 1. Bolding them helps show a separation in lines and declare them as the beginning of a section */
+h2 {
+  font-weight: bold;
+  color: rgb(99, 99, 99);
+}
+
+h3 {
+  font-weight: bold;
+  color: rgb(133, 133, 133);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(219, 0, 0);
+}
+
+p {
+  line-height: 2;
+  color: rgb(102, 102, 102);
+}
+
+/* The font helps my page look cleaner and the background is light and allows the page to look softer */
+body {
+  font-family: Roboto;
+  background-color: rgb(233, 233, 233);
+  font-weight: normal;
+}
