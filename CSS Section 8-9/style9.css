@@ -1,0 +1,74 @@
+div input[type="text"] {
+  background-color: beige;
+}
+
+span {
+  color: red;
+}
+
+/* Expanding the size of the button a bit and rounding the corners */
+button {
+  font-size: large;
+  width: 200px;
+  border-radius: 10%;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: rgb(145, 145, 145);
+}
+
+ol,
+ul {
+  font-size: larger;
+}
+
+body {
+  background: rgb(211, 211, 211);
+}
+
+/* changing the width and giving a border to the chicken image while rounding the corners only slightly */
+img {
+  width: 200px;
+  border: 5px solid rgb(219, 219, 186);
+  border-radius: 20%;
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: rotate(0.15turn);
+}
+
+/* giving a border to my navigation box then and padding the text away from the border a bit */
+nav {
+  border: 5px solid black;
+  width: 98%;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.8);
+  margin-left: 0;
+}
+
+/* giving a border to my footer while padding the text away from that border */
+footer {
+  border: 5px solid black;
+  margin: 100px;
+  padding: 10px;
+}
+
+/* giving my starting paragraph a border with a margin to push it away from the edges of the page, centering it a bit, and padding the text away from the border */
+#summary {
+  border: 5px solid black;
+  padding: 10px;
+  margin: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+table {
+  background: center/200% no-repeat
+    url("https://www.kalmbachfeeds.com/cdn/shop/articles/multiple_white_chickens.jpg?v=1766160048");
+  margin: 0 auto;
+  border: 5px solid black;
+}
