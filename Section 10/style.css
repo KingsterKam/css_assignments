@@ -1,0 +1,124 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  font-family: "Edu QLD Hand", sans-serif;
+}
+
+/* Giving both my dry and wet ingredients list a flexible display to allow centering of the box on the main axis and of the items on the cross axis */
+#dry {
+  font-size: 20px;
+  display: flex;
+  width: auto;
+  justify-self: center;
+  border: 3px solid black;
+  align-items: center;
+  border-radius: 10%;
+  background-color: rgb(164, 153, 140, 0.6);
+  flex-wrap: wrap;
+}
+#wet {
+  font-size: 20px;
+  display: flex;
+  width: auto;
+  justify-self: center;
+  border: 3px solid black;
+  align-items: center;
+  border-radius: 10%;
+  background-color: rgb(164, 153, 140, 0.6);
+  flex-wrap: wrap;
+}
+
+#dry > ul,
+#wet > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#ad,
+ol,
+nav {
+  border: 3px solid black;
+  border-radius: 5%;
+  justify-self: center;
+  background-color: rgb(164, 153, 140, 0.6);
+}
+
+nav {
+  width: 50%;
+}
+
+/* Giving the unordered list under my nav section a flexible display to allow the centering of the box on the main axis and lining up the items in a row */
+nav > ul {
+  display: flex;
+  gap: 15px;
+  justify-self: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Making the table box align on the main axis */
+table {
+  border: 2px solid black;
+  padding: 10px;
+  justify-self: center;
+  background-color: rgba(72, 66, 61, 0.6);
+}
+
+#tricks {
+  color: #ffffff;
+  border: 3px solid black;
+  border-radius: 5%;
+  justify-self: center;
+  background: center/150% no-repeat
+    url("https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2560%2Cc_limit/chocolate-chip-cookie.jpg");
+}
+
+li {
+  padding: 0.5em;
+}
+
+button {
+  padding: 0.2%;
+  background-color: #000080;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: large;
+  transition: all 500ms;
+}
+
+button:hover {
+  background-color: #4979cd;
+  transform: scale(1.2) translate(-10px);
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
+h1,
+h2,
+h3,
+p {
+  justify-self: center;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+img#dry {
+  width: 200px;
+}
+
+img#wet {
+  width: 300px;
+}
