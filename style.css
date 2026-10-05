@@ -1,0 +1,119 @@
+body {
+  /* applied a background image then made sure it covered the screen before fixing it to the background so it only moves to center itself but doesn't change size */
+  background: center/100% no-repeat
+    url("https://images.unsplash.com/photo-1708163383047-1384635f0d89?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmF2aW5lfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+/* centered all 3 of the items */
+h1,
+p,
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gave a 4% margin to the top of my h2 and changed its font size */
+h2 {
+  margin-top: 4%;
+  font-size: 40px;
+}
+
+/* Gave a 2% margin to the top and bottom and a 20% margin on the left and right while increasing font size */
+p {
+  margin: 2% 20%;
+  margin-bottom: -2%;
+  font-size: larger;
+}
+
+nav {
+  /* centered all the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* put a gap between every item within the nav bar to help spread them out */
+  gap: 30px;
+  /* removed bullet points */
+  list-style-type: none;
+  /* put in a border then applied margins to push the border in a bit, also applying padding to help push the text away from the border */
+  border: 3px solid black;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 1%;
+  /* stuck the navigation bar to the top of the page and changed the background color */
+  position: sticky;
+  top: 0;
+  background-color: #f0f8ff;
+}
+
+/* changed the link colors on hover */
+a:hover {
+  color: rgb(103, 164, 179);
+}
+
+.contact {
+  /* took away the bullet points and put a gap so the text was spread from each other */
+  list-style-type: none;
+  gap: 50px;
+  /* Applied a border then put a margin to make the border smaller, also applying a padding and changing the background color */
+  border: 3px solid black;
+  margin-left: 38%;
+  margin-right: 38%;
+  padding: 1%;
+  background-color: #a0d8d8;
+}
+
+.skills {
+  /* applied a margin to the left while increading font size */
+  margin-left: 30%;
+  font-size: larger;
+}
+
+.skills > li {
+  /* made the list items stick to the far left */
+  justify-self: left;
+}
+
+h2::first-letter {
+  /* Increased the size of the first letter */
+  font-size: 50px;
+}
+
+#header {
+  /* changed the font of the main header while applying a 4% margin on the top and changing the color */
+  font-family: "Isometra", sans-serif;
+  margin-top: 4%;
+  color: #505152;
+}
+
+@media (max-width: 1551px) {
+  /* made the contact info and navigation bar become a column when below a 1551 pixel wide screen */
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 850px) {
+  /* took away the margins of the contact info, navigation bar, skills area, and about me area to spread out the border and fit all the info inside */
+  .contact {
+    margin: 0;
+  }
+  nav {
+    margin: 0;
+  }
+  .skills {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
