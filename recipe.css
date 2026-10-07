@@ -1,5 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: beige;
+  background: center/100% no-repeat
+    url("https://static.vecteezy.com/system/resources/previews/066/773/813/large_2x/seamless-beige-paper-texture-background-with-grain-photo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Edu QLD Hand", sans-serif;
 }
 
 h1 {
@@ -7,6 +17,7 @@ h1 {
 }
 
 /* Giving both my dry and wet ingredients list a flexible display to allow centering of the box on the main axis and of the items on the cross axis */
+#wet,
 #dry {
   font-size: 20px;
   display: flex;
@@ -15,19 +26,9 @@ h1 {
   border: 3px solid black;
   align-items: center;
   border-radius: 10%;
-  background-color: rgb(164, 153, 140, 0.6);
+  background-color: rgba(88, 74, 58, 0.6);
   flex-wrap: wrap;
-}
-#wet {
-  font-size: 20px;
-  display: flex;
-  width: auto;
-  justify-self: center;
-  border: 3px solid black;
-  align-items: center;
-  border-radius: 10%;
-  background-color: rgb(164, 153, 140, 0.6);
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #dry > ul,
@@ -37,17 +38,43 @@ h1 {
   gap: 20px;
 }
 
+#tricks {
+  color: #ffffff;
+  border: 3px solid black;
+  border-radius: 5%;
+  justify-self: center;
+  background: center/150% no-repeat
+    url("https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2560%2Cc_limit/chocolate-chip-cookie.jpg");
+  font-size: 20px;
+}
+
+#ad {
+  font-size: 20px;
+}
+
 #ad,
-ol,
+ol {
+  border: 3px solid black;
+  border-radius: 5%;
+  justify-self: center;
+  background-color: rgba(88, 74, 58, 0.6);
+}
+
 nav {
   border: 3px solid black;
   border-radius: 5%;
   justify-self: center;
-  background-color: rgb(164, 153, 140, 0.6);
+  width: 50%;
+  position: sticky;
+  top: 10px;
+  background-color: rgba(88, 74, 58);
 }
 
-nav {
-  width: 50%;
+a {
+  color: white;
+}
+a:hover {
+  color: #85a7e2;
 }
 
 /* Giving the unordered list under my nav section a flexible display to allow the centering of the box on the main axis and lining up the items in a row */
@@ -65,15 +92,7 @@ table {
   padding: 10px;
   justify-self: center;
   background-color: rgba(72, 66, 61, 0.6);
-}
-
-#tricks {
-  color: #ffffff;
-  border: 3px solid black;
-  border-radius: 5%;
-  justify-self: center;
-  background: center/150% no-repeat
-    url("https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2560%2Cc_limit/chocolate-chip-cookie.jpg");
+  font-size: 20px;
 }
 
 li {
@@ -121,4 +140,33 @@ img#dry {
 
 img#wet {
   width: 300px;
+}
+
+.instructions {
+  font-size: 20px;
+}
+
+@media (max-width: 880px) {
+  #dry > ul,
+  #wet > ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 615px) {
+  #wet,
+  #dry {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1123px) {
+  nav {
+    width: 100%;
+  }
 }
