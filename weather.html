@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Weather App</h1>
+      <p>
+        Welcom to my Weather App, here to give you the most recent information
+        on this weeks weather
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><b>Primary Forecast Links:</b></li>
+          <ul>
+            <a href="#dashboard"><li>My Dashboard</li></a>
+            <a href="#today"><li>Today</li></a>
+            <a href="#hourly"><li>Hourly</li></a>
+            <a href="#day"><li>10 Day</li></a>
+            <a href="#weekend"><li>Weekend</li></a>
+            <a href="#monthly"><li>Monthly</li></a>
+          </ul>
+        </ul>
+        <ul>
+          <li>Secondary Links:</li>
+          <ul>
+            <a href="#radar"><li>Radar</li></a>
+            <a href="#video"><li>Video</li></a>
+            <a href="#forecast"><li>More Forecasts</li></a>
+          </ul>
+        </ul>
+      </nav>
+
+      <div class="main_content">
+        <div class="main_column">
+          <!-- Weather Card -->
+          <div class="weather-card">
+            <div class="weather_location">Salt Lake City, UT</div>
+            <div class="weather-time">As of 12:00 PM MDT</div>
+            <div>
+              <span id="current-temp">72&deg;F</span>
+            </div>
+            <p class="weather-condition" id="current-desc">Partly Cloudy</p>
+            <a href="" class="weather-button">See in-depth forecast</a>
+          </div>
+
+          <!-- Areas to Watch -->
+          <div class="areas-to-watch-card">
+            <h2 class="card-title">Areas To Watch</h2>
+            <p>
+              Tropical Storm Lowell is active in the eastern/central North
+              Pacific, located north-northwest of the Hawaiian Islands.
+            </p>
+            <div class="lowell">
+              <img
+                src="https://www.bigislandvideonews.com/wp-content/uploads/2026/08/2026-08-28-storms-FEATURE.jpg"
+                alt="A map of hurricane lowell"
+              />
+            </div>
+          </div>
+
+          <!-- Atlantic Tropics -->
+          <div class="atlantic-tropics-card">
+            <h2 class="card-title">Atlantic Tropics</h2>
+            <div class="atlantic-tropics-grid">
+              <div class="atlantic-tropics-item">
+                <img
+                  src="https://watchers.news/wp-content/uploads/2025/09/5km-sst-anomalies-september-24-2025-f.webp"
+                  alt="A temperature anomaly"
+                />
+                <p>Sea Surface Temperature Anomaly in the Pacfic Ocean</p>
+              </div>
+              <div class="atlantic-tropics-item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AV2-f58yH0uEWIVgOMyJmQ4qBKc79EctclHqz2NtenzfUYKUSaAg8Rt4&s=10"
+                  alt="Tropical Development potential in Florida"
+                />
+                <p>
+                  Atlantic poised to break hurricane record as forecasters watch
+                  waters near US
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-column">
+          <!-- Coming in Sideways Card -->
+          <div class="sidebar-card">
+            <h2 class="title">Coming in Sideways</h2>
+            <div class="video-thumbnail">
+              <img
+                src="https://www.positivelyosceola.com/wp-content/uploads/2023/08/diry-side-948x640.jpg"
+                alt="A Video Frame"
+              />
+              <p>A video showing a storm coming in sideways.</p>
+            </div>
+          </div>
+          <!-- Pick a Less-Explored Spot Card -->
+          <div class="sidebar-card">
+            <h2 class="card-title">Pick A Less-Explored Spot</h2>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpj5U6WthQZzz0-u6-zl5WzF739akMy4OZFifDCOjC-EMS2P2FQOj1VzQ&s=10"
+              alt="A travel photo"
+            />
+            <p>A travel photo showing a beautiful scene in Paraguay.</p>
+          </div>
+          <!-- Product Reviews & Deals Card -->
+          <div class="siebar-card">
+            <h2 class="card-title">Product Reviews &amp; Deals</h2>
+            <ul class="product-list">
+              <li class="product-item">
+                <img
+                  src="https://m.media-amazon.com/images/I/B1pppR4gVKL._CLa%7C2140%2C2000%7C814FkbgFYtL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+                  alt="Weather Merchandise number 1"
+                />
+                <p>
+                  A 20&percnt; discount on a shirt showing weather forecast.
+                </p>
+              </li>
+              <li class="product-item">
+                <img
+                  src="https://i.etsystatic.com/38104206/r/il/48fe43/7115447978/il_fullxfull.7115447978_s4en.jpg"
+                  alt="Weather Merchandise number 2"
+                />
+                <p>
+                  A 50&percnt; discount on all keychains with weather related
+                  merch.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
